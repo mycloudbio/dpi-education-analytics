@@ -1,0 +1,7 @@
+enrolment_id,learner_id,cohort_id,enrolment_date,agreed_fee_ngn,status
+E001,L001,CO001,2026-05-01,150000,active
+E002,L002,CO001,2026-05-02,150000,active
+E003,L003,CO001,2026-05-03,150000,completed
+E004,L004,CO002,2026-05-25,80000,active
+E005,L005,CO002,2026-05-26,80000,active
+E006,L006,CO002,2026-05-27,80000,withdrawn
