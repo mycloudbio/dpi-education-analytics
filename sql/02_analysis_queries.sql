@@ -47,7 +47,15 @@ GROUP BY c.course_name
 ORDER BY c.course_name;
 
 -- 5. Overall financial summary
-SELECT SUM(e.agreed_fee_ngn) AS expected_fees_ngn,
-       COALESCE(SUM(p.amount_ngn), 0) AS recorded_collections_ngn
-FROM enrolments e
-LEFT JOIN payments p ON p.enrolment_id = e.enrolment_id;
+WITH expected AS (
+    SELECT SUM(agreed_fee_ngn) AS expected_fees_ngn
+    FROM enrolments
+),
+collected AS (
+    SELECT SUM(amount_ngn) AS recorded_collections_ngn
+    FROM payments
+)
+SELECT expected.expected_fees_ngn,
+       COALESCE(collected.recorded_collections_ngn, 0) AS recorded_collections_ngn
+FROM expected
+CROSS JOIN collected;
