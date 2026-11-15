@@ -1,0 +1,7 @@
+payment_id,enrolment_id,payment_date,amount_ngn,payment_method
+P001,E001,2026-05-01,50000,transfer
+P002,E001,2026-05-20,50000,transfer
+P003,E002,2026-05-02,150000,transfer
+P004,E003,2026-05-03,150000,transfer
+P005,E004,2026-05-25,40000,transfer
+P006,E005,2026-05-26,80000,transfer
