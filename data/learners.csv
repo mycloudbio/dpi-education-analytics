@@ -1,0 +1,7 @@
+learner_id,first_name,last_name,email,registration_date
+L001,Ada,Okafor,ada.okafor@example.invalid,2026-05-01
+L002,Tunde,Bello,tunde.bello@example.invalid,2026-05-02
+L003,Mira,James,mira.james@example.invalid,2026-05-03
+L004,David,Obi,david.obi@example.invalid,2026-05-04
+L005,Zara,Ali,zara.ali@example.invalid,2026-05-05
+L006,Noah,Etim,noah.etim@example.invalid,2026-05-06
